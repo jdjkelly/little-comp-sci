@@ -35,3 +35,34 @@ T = 2^n
 themselves
 - "What is optimal in set X for group Y?" vs "Is A optimal for everyone in Y?"
 - Halting problem
+
+## Lambda Calculus
+- Functions are the only data type
+- Reduction through application
+- Function arity of one (currying - breaking a function with multiple arguments
+into chained functions with an arity of one)
+
+```
+λx.x
+function argument . body/return
+```
+
+### Identity
+```
+λx.x
+```
+
+### Constant
+```
+λx.y
+```
+
+### Booleans
+- True returns the first value
+```
+λx.λy.x
+```
+- False returns the second value
+```
+λx.λy.y
+```
