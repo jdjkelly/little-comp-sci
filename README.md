@@ -66,3 +66,19 @@ function argument . body/return
 ```
 λx.λy.y
 ```
+
+### Conditionals
+```
+λx.λy.λz.x y z
+``
+```
+
+### Numbers
+```
+λf.λx.x         # 0
+λf.λx.f x       # 1
+λf.λx.f f x     # 2
+```
+
+
+
