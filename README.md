@@ -80,5 +80,41 @@ function argument . body/return
 λf.λx.f f x     # 2
 ```
 
+### Combinators
+- A higher order function that uses only function application and earlier
+defined combinators to define a result from its arguments
 
+#### Omega Combinator
+```
+λx.xx
+```
+- Given x, return the application of x to x
 
+#### Y Combinator
+- Recursive, fixed point function: yf = f(yf) forall f
+- You give it a function as an argument it invokes, it then returns that
+function back out to you
+```
+λf.(λx.f(xx))(λx.f(xx))
+```
+
+## Machinery
+
+### Markov Chains
+- A set of states with rules that allow transition between those states
+
+### Finite State Machine
+
+#### Deterministic
+- Every state has a single transition for every action until we finally reach
+acceptance or rejection
+
+#### Nondeterministic
+- One or more transitions for a set of actions, and these transitions are
+essentially "random"
+- Capable of transitioning from one state to the next as a result of some
+random choice, independent of prior state
+
+### Pushdown Machine
+- A finite state machine with a stack
+- Two additional operations: push and pop
