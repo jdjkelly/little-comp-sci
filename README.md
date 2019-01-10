@@ -118,3 +118,29 @@ random choice, independent of prior state
 ### Pushdown Machine
 - A finite state machine with a stack
 - Two additional operations: push and pop
+
+### Turing Machine
+- Introduced by Turing in ('On Computable Numbers')[https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf]
+- Composable machines, equivalent to functions
+- (Church-Turing Conjecture)[https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis}:
+  - > If an algorithim is computable, a Turing Machine can compute it
+  - > All total functions are computable
+
+### Von Neumann Machine
+- Turing submits plans to National Physics Laboratory: 'Automatic Computing Engine'
+- input > ( CPU ( control unit, logic unit) <> memory unit ) > output
+
+## Big O
+
+### O(1)
+- order 1
+- on the order of 1 operation for all possible inputs
+- for all inputs to our program, only one operation will be required
+- ex. accessing first element of an array with an index
+
+### O(N)
+- order n
+- for all inputs to our program, the number of operations grows linearly
+- ex. summing an array of numbers
+
+### O(N^2)
