@@ -70,7 +70,6 @@ function argument . body/return
 ### Conditionals
 ```
 λx.λy.λz.x y z
-``
 ```
 
 ### Numbers
@@ -78,8 +77,7 @@ function argument . body/return
 λf.λx.x         # 0
 λf.λx.f x       # 1
 λf.λx.f f x     # 2
-```
-
+``` 
 ### Combinators
 - A higher order function that uses only function application and earlier
 defined combinators to define a result from its arguments
@@ -125,10 +123,12 @@ random choice, independent of prior state
 - (Church-Turing Conjecture)[https://en.wikipedia.org/wiki/Church%E2%80%93Turing_thesis}:
   - > If an algorithim is computable, a Turing Machine can compute it
   - > All total functions are computable
+- @TODO
 
 ### Von Neumann Machine
 - Turing submits plans to National Physics Laboratory: 'Automatic Computing Engine'
 - input > ( CPU ( control unit, logic unit) <> memory unit ) > output
+- @TODO
 
 ## Big O
 
@@ -137,10 +137,27 @@ random choice, independent of prior state
 - on the order of 1 operation for all possible inputs
 - for all inputs to our program, only one operation will be required
 - ex. accessing first element of an array with an index
+- random access to a given element is always O(1)
 
 ### O(N)
 - order n
 - for all inputs to our program, the number of operations grows linearly
 - ex. summing an array of numbers
+- list iterations are alwys O(N)
 
 ### O(N^2)
+- order n squared
+- for all inputs to our program, the number of operations grows exponentially
+- ex. brute force checking an array for duplicates
+- nested loops on the same collection are always at least O(N^2)
+
+### O(LOG N)
+- divide and conquer is always O(LOG N)
+- @TODO
+
+### O(N LOG N)
+- iterations that use divide and conquer are always O(N LOG N)
+- @TODO
+
+### O(N!)
+- @TODO
